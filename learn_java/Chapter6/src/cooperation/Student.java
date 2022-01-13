@@ -4,7 +4,6 @@ public class Student {
 
 
 	public String name;
-	public int grade;
 	public int money;
 	
 	public Student(String name,int money)
