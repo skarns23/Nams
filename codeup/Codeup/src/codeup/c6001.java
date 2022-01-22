@@ -1,4 +1,5 @@
 package codeup;
+
 import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.util.ArrayList;
@@ -20,25 +21,35 @@ public class c6001 {
 		}
 		int row=1;
 		int col=1;
-		
 		while(true)
 		{
+			
 			if(arr[row][col]==2)
+			{	
+				arr[row][col]=9;
+				break;
+			}
+			else if(arr[row+1][col]==1 &&arr[row][col+1]==1)
 			{
 				arr[row][col]=9;
 				break;
 			}
-			else
+			else if(arr[row][col]==0)
 				arr[row][col]=9;
-			if(arr[row][col+1]==1)
-			{
-				if(arr[row+1][col]==1)
-					break;
-				else
-					row++;
-			}
-			if
 		
+			switch (arr[row][col+1])
+			{
+			case 0:
+				col++;
+				break;
+			case 1:
+				row++;
+				break;
+			case 2:
+				col++;
+				break;
+				
+			}
 		}
 		for(int i=0;i<10;i++)
 		{

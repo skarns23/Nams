@@ -8,7 +8,13 @@ public class Customer {
 	int bonus;
 	double per;
 	
-	
+	public Customer(int id, String name)
+	{
+		this.id = id;
+		this.name =name;
+		this.grade = "Silver";
+		this.per = 0.01;
+	}
 	public int getId() {
 		return id;
 	}
@@ -39,11 +45,7 @@ public class Customer {
 	public void setPer(double per) {
 		this.per = per;
 	}
-	public Customer()
-	{
-		this.grade = "Silver";
-		this.per = 0.01;
-	}
+
 	public int carBonus(int price)
 	{
 		this.bonus += price*this.per;
