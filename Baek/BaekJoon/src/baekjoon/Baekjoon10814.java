@@ -15,6 +15,9 @@ public class Baekjoon10814 {
 		{
 		 
 			for(int k=i+1;k<input.size();k++)
+			{
+				
+			}
 		}
 	}
 }
