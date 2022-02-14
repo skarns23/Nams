@@ -43,9 +43,15 @@
 <summary> 2022.2.14(MON)</summary>
 <div markdown="1">
 
-### 자바 collection 프레임워크 실습 공부  
+### 1. 자바 collection 프레임워크 실습 공부  
 https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
 
  
+ ### 2. Stack
+ - 스택은 상자를 쌓듯이 자료를 관리하는 방법
+.- 맨 나중에 들어간 요소가 제일 처음으로 나오는 LIFO (Last In First Out) 형식이다.
+ ### 4. LinkedList
+ - ArrayList에 비해 중간에 자료를 넣고 제거하는 시간이 적게 걸린다.
+ - 크기를 동적으로 증가시킬 수 있다.
 </div>
 </details>
