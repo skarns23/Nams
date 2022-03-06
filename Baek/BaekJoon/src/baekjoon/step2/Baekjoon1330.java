@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.step2;
 import java.util.*;
 public class Baekjoon1330 {
 
