@@ -55,3 +55,21 @@ https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
  - 크기를 동적으로 증가시킬 수 있다.
 </div>
 </details>
+ 
+<details>
+ <summary> 2022.3.7(MON)</summary>
+ <div markdown ="1">
+  
+  ### [백준 단계별 문제 풀기 (for문 ~ 1차원 배열 2번까지)](https://github.com/skarns23/Nams/tree/master/Baek/BaekJoon/src/baekjoon)
+  - 기존에 코드의 구성을 할때는 Scanner를 이용하여 입력을 받았는데 [백준 빠른 A+B](https://www.acmicpc.net/problem/15552) 문제를 통해 BufferedReader 와 BufferedWriter 방식의 입 출력형태를 활용해보고 있다.
+ 
+  ### Scanner와 BufferedReader 비교
+  1. Scanner는 BufferedReader보다 활용성이 높다.
+  - Scanner의 경우 자료형을 지정하여 읽을 수 있는 반면, BufferedReader의 경우에는 String값으로만 읽을 수 있다.
+  2. BufferedReader의 경우에는 파싱 (Parsing), 예외처리 (throws Exception or try catch)가 필요하다.
+  - 그러나 효율성 및 속도의 측면에서 Scanner보다 BufferedReader가 빠르기때문에 BufferedReader또한 많이 사용된다.
+  - 파싱의 경우에는 StringTokenizer을 활용한다.
+  
+  </div>
+ </details>
+ 
