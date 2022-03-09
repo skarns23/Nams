@@ -8,6 +8,7 @@ import java.io.IOException;
 public class Baekjoon4344 {
 
 	public static void main(String[] args) throws IOException {
+		// 버퍼를 이용한 방식이 스캐너에 비해 2.5배가량 빠름
 		/*
 		 * Scanner sc = new Scanner(System.in); int num = sc.nextInt(); double[] result
 		 * = new double[num]; for (int i=0; i<num;i++) { int sum=0; int count=0; int[]
