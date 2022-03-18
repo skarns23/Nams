@@ -7,20 +7,18 @@ public class Baekjoon1037 {
 
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
-		int result;
-		int[] arr = new int [size];
-		if (size==1)
-			result=size*size;
-		else
-		{
-			for(int i=0;i<size;i++)
-			{
-				arr[i] = sc.nextInt();
+
+			int max = Integer.MIN_VALUE;
+			int min = Integer.MAX_VALUE;
+			for(int i =0 ;i<size;i++) {
+				int num = sc.nextInt();
+				if(num>max)
+					max = num;
+				if(num<min)
+					min = num;
 			}
-		}
-		Arrays.sort(arr);
-		result =arr[0]*arr[arr.length-1];
-		System.out.println(result);
+			System.out.println(max*min);
+		
 	}
 
 }
