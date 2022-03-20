@@ -88,3 +88,56 @@ https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
   </div>
  </details>
  
+  <details>
+ <summary> 2022.3.20(SUN)</summary>
+ <div markdown ="1">
+
+### 지역 내부 클래스
+  - 지역 변수와 같이 메서드 내부에서 정의하여 사용하는 클래스
+  - 메서드의 호출이 끝나면 메서드에 사용된 지역변수의 유효성은 사라짐
+  - 메서드 호출 이후에도 사용해야하는 경우가 있을 수 있으므로 지역 내부 클래스에서 사용하는 메서드의 변수는 final로 선언
+  
+ ### 익명 내부 클래스
+  - 이름이 없는 클래스 
+  - 클래스의 이름을 생략하고 주로 하나의 인터페이스나 하나의 추상 클래스를 구현하여 반환
+  - 인터페이스나 추상 클래스 자료형의 변수에 직접 대입하여 클래스를 생성하거나 지역 내부 클래스의 메서드 내부에서 생성하여 반환 할 수 있음
+ 
+  ### 람다식
+  - 함수의 구현과 호출만으로 프로그래밍이 수행되는 방식
+  - 함수형 프로그래밍에서 활용되고, 주어진 매개변수만을 활용하여 외부 자료에 side effect를 주지않음
+  - 매개변수 외에는 외부 자료를 사용하지 않아서 병렬처리가 가능함
+  - 동일한 자료에 대해 동일한 결과를 보장하여 함
+  
+  ### 람다식 문법
+  - 익명 함수 만들기
+  - 매개 변수와 매개변수를 이용한 실행문 (매개변수)->(실행문;)
+  ```JAVA
+  int add(int x, int y){
+   return x+y;
+  }
+  
+  ```
+  - 람다식으로 표현
+  ``` JAVA
+  (int x, int y) -> (return x+y;)
+  ```
+  
+  ### 함수형 인터페이스 선언하기
+  - 람다식을 선언하기 위한 인터페이스
+  - 익명 함수와 매개 변수만으로 구현되므로 인터페이스는 단 하나의 메서드만을 선언해야함
+  - @FunctionalInterface 어노테이션 : 함수형 인터페이스라는 의미로 내부에 여러 개의 메ㅔ서드를 선언하면 에러가 남
+  ```JAVA
+  public class MyNumberTest {
+
+	public static void main(String[] args) {
+		
+		MyNumber myNumber = (x,y)-> x>y ? x:y; 
+		System.out.println(myNumber.getMax(20, 33));
+	}
+
+}
+  ```
+  
+  </div>
+ </details>
+ 
