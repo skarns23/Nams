@@ -111,22 +111,27 @@ https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
   ### 람다식 문법
   - 익명 함수 만들기
   - 매개 변수와 매개변수를 이용한 실행문 (매개변수)->(실행문;)
-  ```JAVA
+	 
+  ```
   int add(int x, int y){
    return x+y;
   }
   
   ```
+	 
   - 람다식으로 표현
-  ``` JAVA
+	 
+  ``` 
   (int x, int y) -> (return x+y;)
-  ```
+
+```
   
   ### 함수형 인터페이스 선언하기
   - 람다식을 선언하기 위한 인터페이스
   - 익명 함수와 매개 변수만으로 구현되므로 인터페이스는 단 하나의 메서드만을 선언해야함
-  - @FunctionalInterface 어노테이션 : 함수형 인터페이스라는 의미로 내부에 여러 개의 메ㅔ서드를 선언하면 에러가 남
-  ```JAVA
+  - @FunctionalInterface 어노테이션 : 함수형 인터페이스라는 의미로 내부에 여러 개의 메서드를 선언하면 에러가 남
+	 
+  ```
   public class MyNumberTest {
 
 	public static void main(String[] args) {
@@ -136,8 +141,19 @@ https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
 	}
 
 }
-  ```
+	 
+```
   
   </div>
  </details>
+
+ <details>
+ <summary> 2022.3.22(TUE)</summary>
+ <div markdown ="1">
+  
+  </div>
+ </details>
+	
+	
+
  
