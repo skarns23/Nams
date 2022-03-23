@@ -7,6 +7,10 @@ public class Baekjoon9663 {
 	static int[][] arr;
 	static int count = 0;
 	
+	
+	public static void dfs(int index) {
+		
+	}
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int size = Integer.parseInt(br.readLine());
