@@ -1,5 +1,6 @@
 # 📌[2022]
 
+
 <details>
 <summary> 2022.2.13(SUN)</summary>
 <div markdown="1">
@@ -27,6 +28,7 @@
 | Iterator<E> iterator | Collection을 순환할 반복자를 반환|
 | boolean remove(Object o) | Collection에 매개변수에 해당하는 인스턴스가 존재하면 제거|
 | int size() | Collection에 있는 요소의 개수를 반환|
+	
 
 
 ### Map
@@ -69,6 +71,7 @@ https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
   2. BufferedReader의 경우에는 파싱 (Parsing), 예외처리 (throws Exception or try catch)가 필요하다.
   - 그러나 효율성 및 속도의 측면에서 Scanner보다 BufferedReader가 빠르기때문에 BufferedReader또한 많이 사용된다.
   - 파싱의 경우에는 StringTokenizer을 활용한다.
+	 
   
   </div>
  </details>
@@ -87,98 +90,19 @@ https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
   
   </div>
  </details>
- 
-  <details>
- <summary> 2022.3.20(SUN)</summary>
- <div markdown ="1">
 
-### 지역 내부 클래스
-  - 지역 변수와 같이 메서드 내부에서 정의하여 사용하는 클래스
-  - 메서드의 호출이 끝나면 메서드에 사용된 지역변수의 유효성은 사라짐
-  - 메서드 호출 이후에도 사용해야하는 경우가 있을 수 있으므로 지역 내부 클래스에서 사용하는 메서드의 변수는 final로 선언
-  
- ### 익명 내부 클래스
-  - 이름이 없는 클래스 
-  - 클래스의 이름을 생략하고 주로 하나의 인터페이스나 하나의 추상 클래스를 구현하여 반환
-  - 인터페이스나 추상 클래스 자료형의 변수에 직접 대입하여 클래스를 생성하거나 지역 내부 클래스의 메서드 내부에서 생성하여 반환 할 수 있음
  
-  ### 람다식
-  - 함수의 구현과 호출만으로 프로그래밍이 수행되는 방식
-  - 함수형 프로그래밍에서 활용되고, 주어진 매개변수만을 활용하여 외부 자료에 side effect를 주지않음
-  - 매개변수 외에는 외부 자료를 사용하지 않아서 병렬처리가 가능함
-  - 동일한 자료에 대해 동일한 결과를 보장하여 함
-  
-  ### 람다식 문법
-  - 익명 함수 만들기
-  - 매개 변수와 매개변수를 이용한 실행문 (매개변수)->(실행문;)
-	 
-  ```JAVA
-  int add(int x, int y){
-   return x+y;
-  }
-   
-  (int x, int y) -> (return x+y;)
-
-  ```
-  
-  ### 함수형 인터페이스 선언하기
-  - 람다식을 선언하기 위한 인터페이스
-  - 익명 함수와 매개 변수만으로 구현되므로 인터페이스는 단 하나의 메서드만을 선언해야함
-  - @FunctionalInterface 어노테이션 : 함수형 인터페이스라는 의미로 내부에 여러 개의 메서드를 선언하면 에러가 남
-	 
-  ```JAVA
-public static void main(String[] args) {
-		
-	MyNumber myNumber = (x,y)-> x>y ? x:y; 
-	System.out.println(myNumber.getMax(20, 33));
-}
-```
-  
-  </div>
- </details>
 
  <details>
- <summary> 2022.3.22(TUE)</summary>
- <div markdown ="1">
-   
-   
-## 📝 스트림 (Stream)
-   
-   
- ### 스트림 이란?
-   - 자료의 대상과 관계없이 동일한 연산을 수행
-   - 한번 생성하고 사용한 스트림은 재사용 할 수 없음
-   - 스트림 연산은 기존 자료를 변경하지 않음
-   - 스트림 연산은 중간 연산과 최종 연산으로 구분 됨
-   - 중간 연산은 여러 개의 연산이 적용될 수 있으나, 최종 연산은 마지막에 한 번만 적용됨
-   - 중간 연산에 대한 결과를 연산 중에 알수 없음 ( 지연 연산)
-  
-  ### 중간 연산과 최종 연산
-   - 중간 연산의 예 - filter(), map(), sorted() 등
-     조건에 맞는 요소를 추출하거나 요소를 변환 함(map)
-   - 문자열 리스트에서 문자열의 길이가 5 이상인 요소만 출력하기
- ```JAVA
-   sList.stream().filter(s->s.length() >= 5).forEach(s->System.out.println(s));
- ```
-   - 고객 클래스 배열에서 고객 이름만 가져오기
- ```JAVA
-   customerList.stream().map(c->c.getName()).forEach(s->System.out.println(s));
- ```
-   - 최종 연산의 예 - forEach(), count(), sum() 등
-   
-   
-   </div>
- </details>
-
-  <details>
- <summary> 2022.3.20(SUN)</summary>
- <div markdown ="1">
-	 
+ <summary> 2022.3.24(THU)</summary>
+ <div markdown ="1">	 
   ### reduce() 연산
    - 정의된 연산이 아닌 프로그래머가 직접 구현한 연산을 적용
+	 
    ``` JAVA 
    T reduce(T identify, BinaryOperator<T>, accumulator)
-   ```   
+   ```  
+	 
    - 최종 연산으로 스트림의 요소를 소모하며 연산을 수행
    - 배열의 모든 요소의 합을 구하는 reduce() 연산 구현 예
    ```JAVA     
@@ -196,8 +120,11 @@ public static void main(String[] args) {
   - 프로그램의 비정상 종료를 피하며 시스템이 원활하게 실행되도록 함
 - 실행 오류가 발생한 경우 오류의 과정을 재현하는 것이 현실적으로 어려움
 - 오류가 발생한 경우 log를 남겨서 추후 log 분석을 통해 그 원인을 파악하여 bug를 수정하는 것이 중요함
-
 ### 오류와 예외 클래스
-	 - 시스템 오류 : 가상 머신에서 발생, 프로그래머가 처리할 수 없는 오류 (스택 메모리 오버플로우등)
-	 - 예외 : 프로그램에서 제어 할 수 있는 오류 (읽을려는 파일이 존재하지 않거나, DB연결 실패등)
-	 - 자바는 안정성이 중요한 언어로 대부분 프로그램에서 발생하는 오류에 대해 문법적으로 예외 처리해야함
+- 시스템 오류 : 가상 머신에서 발생, 프로그래머가 처리할 수 없는 오류 (스택 메모리 오버플로우등)
+- 예외 : 프로그램에서 제어 할 수 있는 오류 (읽을려는 파일이 존재하지 않거나, DB연결 실패등)
+- 자바는 안정성이 중요한 언어로 대부분 프로그램에서 발생하는 오류에 대해 문법적으로 예외 처리해야함   
+ 
+ </div>
+ </details>
+	  
