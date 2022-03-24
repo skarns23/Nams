@@ -119,7 +119,7 @@ https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
    
   (int x, int y) -> (return x+y;)
 
-```
+  ```
   
   ### 함수형 인터페이스 선언하기
   - 람다식을 선언하기 위한 인터페이스
@@ -163,13 +163,41 @@ public static void main(String[] args) {
    - 고객 클래스 배열에서 고객 이름만 가져오기
  ```JAVA
    customerList.stream().map(c->c.getName()).forEach(s->System.out.println(s));
-  ```
+ ```
    - 최종 연산의 예 - forEach(), count(), sum() 등
    
    
    </div>
  </details>
-	
-	
 
- 
+  <details>
+ <summary> 2022.3.20(SUN)</summary>
+ <div markdown ="1">
+	 
+  ### reduce() 연산
+   - 정의된 연산이 아닌 프로그래머가 직접 구현한 연산을 적용
+   ``` JAVA 
+   T reduce(T identify, BinaryOperator<T>, accumulator)
+   ```   
+   - 최종 연산으로 스트림의 요소를 소모하며 연산을 수행
+   - 배열의 모든 요소의 합을 구하는 reduce() 연산 구현 예
+   ```JAVA     
+   Arrays.stream(arr).reduce(0, (a,b)->(a+b)); 
+   ```
+   - 람다식을 직접 구현하거나 람다식이 긴 경우 BinaryOperator를 구현한 클래스를 사용 함
+         
+  ## 📝 예외처리
+     
+  ### 프로그램에서의 오류
+  - 컴파일 오류 : 프로그램 코드 작성 중 발생하는 문법적 오류 (최근에는 개발 환경에서 대부분 오류 detection 됨)
+  - 실행오류 : 실행 중인 프로그램이 의도 하지 않은 동작을 하거나 프로그램이 중지되는 오류
+  
+  ### 예외 처리의 중요성
+  - 프로그램의 비정상 종료를 피하며 시스템이 원활하게 실행되도록 함
+- 실행 오류가 발생한 경우 오류의 과정을 재현하는 것이 현실적으로 어려움
+- 오류가 발생한 경우 log를 남겨서 추후 log 분석을 통해 그 원인을 파악하여 bug를 수정하는 것이 중요함
+
+### 오류와 예외 클래스
+	 - 시스템 오류 : 가상 머신에서 발생, 프로그래머가 처리할 수 없는 오류 (스택 메모리 오버플로우등)
+	 - 예외 : 프로그램에서 제어 할 수 있는 오류 (읽을려는 파일이 존재하지 않거나, DB연결 실패등)
+	 - 자바는 안정성이 중요한 언어로 대부분 프로그램에서 발생하는 오류에 대해 문법적으로 예외 처리해야함
