@@ -127,4 +127,34 @@ https://github.com/skarns23/Nams/tree/master/learn_java/Chapter12/src/collection
  
  </div>
  </details>
+
+ <details>
+ <summary> 2022.3.25(FRI)</summary>
+ <div markdown ="1">	 
+ 
+### 예외 처리하기와 미루기
+
+- try 블록에는 예외가 발생할 가능성이 있는 코드를 작성하고 try 블록 안에서 예외가 발생하는 경우 catch 블록이 수행됨
+
+```JAVA
+try{
+  예외가 발생할 수 있는 코드 부분
+} catch (처리할 예외 타입 e){
+  try 블록 안에서 예외가 발생했을 때 예외를 처리하는 부분
+ }
+```
+
+#### try-catch-finally 문
+- finally 블럭에서 파일을 닫거나 네트웍을 닫는 등의 리소스 해제 구현을 함
+- try{} 블럭이 수행되는 경우, finally{} 블럭은 항상 수행 됨
+- 여러 개의 예외 블럭이 있는 경우 각각에서 리소스를 해제하지 않고, finally 블록에서 해제하도록 구현
+
+
+#### try-with-resources 문
+- 리소스를 사용하는 경우 close() 하지 않아도 자동으로 해제 되도록 함
+- 리소스를 try{} 내부에서 선언해야만 함
+- 해당 리소스 클래스가 AutoCloseable 인터페이스를 구현 애햐 함
+ 
+ </div>
+ </details>
 	  
