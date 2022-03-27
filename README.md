@@ -158,3 +158,52 @@ try{
  </div>
  </details>
 	  
+<details>
+ <summary> 2022.3.27(SUN)</summary>
+ <div markdown ="1">	 
+ 
+### 예외 처리 미루기
+- 예외 처리는 예외가 발생하는 문장에서 try-catch 블록으로 처리하는 방법과 이를 사용하는 부분에서 처리하는 방법 두 가지가 있음
+- throws를 이용하면 예외가 발생할 수 있는 부분을 사용하는 문장에서 예외를 처리할 수 있음
+
+### 사용자 정의 예외 클래스 구현하기
+- 자바에서 제공되는 예외 클래스외에 프로그래머가 직접 만들어 처리해야하는 예외가 있을 수 있음
+- 기존 예외 클래스 중 가장 유사한 예외 클래스를 상속 받아 사용자 정의 예외 클래스를 만듬
+- Exception 클래스를 상속해서 만들 수 있음 
+
+
+## 📝 오류의 로그를 남기기 Logger 활용
+
+### logging
+- 시스템 운영에 대한 기록
+- 오류가 발생 했을 때 그 오류에 대한 기록을 남겨 디버깅을 용이하게 함
+- 로그 파일에 기록하는 코드를 추가하여 필요한 정보가 로그로 남을 수 있도록 함
+- 너무 적은 로그 : 정확한 시스템의 상황을 파악하기 어려움
+- 너무 많은 로그 : 빈번한 file I/O의 오버헤드와 로그 파일의 백업 문제 발생
+
+### java.util.logging
+- 자바에서 기본적으로 제공되는 log package
+- 파일이나 콘솔에 로그 내용을 출력할 수 있음
+- jre/lib/logging.properties 파일 편집을 통해 로그의 출력방식, 로그 레벨을 변경 가능
+- logging 패키지에서 제공하는 로그 레벨은 severe, warning, info, config, fine, finer, finest 임
+- 오픈소르로는 log4j를 많이 사용
+
+## 📝 I/O 스트림
+
+### 바이트 단위 입출력 스트림
+- InputStream : 바이트 단위 입력 스트림 최상위 추상 클래스
+
+- 주요 하위 클래스
+> - FileInputStream : 파일에서 바이트 단위로 자료를 읽음
+> - ByteArrayInputStream : byte 배열 메모리에서 바이트 단위로 자료를 읽음
+> - FilterInputStream : 기반 스트림에서 자료를 읽을 때 추가 기능을 제공하는 보조 스트림의 상위 클래스 
+
+- OutputStream : 바이트 단위 출력 스트림 최상위 추상 클래스
+
+- 주요 하위 클래스
+> - FileOutputStream : 파일에서 바이트 단위로 자료를 씀
+> - ByteArrayOutputStream : byte 배열 메모리에서 바이트 단위로 자료를 씀
+> - FilterOutputStream : 기반 스트림에서 자료를 쓸 때 추가 기능을 제공하는 보조 스트림의 상위 클래스
+ </div>
+ </details>
+	  
