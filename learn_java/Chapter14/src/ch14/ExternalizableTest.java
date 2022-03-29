@@ -55,6 +55,8 @@ public class ExternalizableTest {
 				ObjectInputStream ois = new ObjectInputStream(fis)){
 			Student plee = (Student)ois.readObject();
 			Student pkim = (Student)ois.readObject();
+			System.out.println(plee);
+			System.out.println(pkim);
 		}catch(IOException e) {
 			System.out.println(e);
 		}catch (ClassNotFoundException e) {
