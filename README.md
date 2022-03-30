@@ -247,7 +247,7 @@ try{
  <summary> 2022.3.29(TUE)</summary>
  <div markdown ="1">	 
 
-## [데코레이터 패턴을 활용한 커피 머신 프로그램](https://github.com/skarns23/Nams/tree/master/learn_java/Chapter14/src/ch16)
+## 📝 [데코레이터 패턴을 활용한 커피 머신 프로그램](https://github.com/skarns23/Nams/tree/master/learn_java/Chapter14/src/ch16)
 
 ### Decorator Pattern
 - 객체의 결합을 통해 기능을 동적으로 유연하게 확장 가능
@@ -258,7 +258,7 @@ try{
 - 지속적인 기능의 추가와 제거가 용이함
 - 데코레이터와 컴포넌트는 동일하지 않음
 
-## 자바에서 Thread 만들기
+## 📝 자바에서 Thread 만들기
 
 ### Thread란
 - 프로세스가 단순히 실행 중인 프로그램이라면 thread는 프로세스내에서 실제로 작업을 수행하는 주체를 의미
@@ -373,4 +373,107 @@ public class TerminateThread extends Thread{
 
  </div>
  </details>
-	  
+
+<details>
+ <summary> 2022.3.30(WEN)</summary>
+ <div markdown ="1">
+
+## 📝 multi-thread 프로그래밍 동기화
+
+### critical section 과 semaphore
+- critical section은 두 개 이상의 thread가 동시에 접근 하는 경우 문제가 생길 수 있기 때문에 동시에 접근할 수 없는 임계 영역
+- semaphore는 특별한 형태의 시스템 객체이며 get/release 두 개의 기능이 존재
+- 한 순간 오직 하나의 thread만이 semaphore를 얻을 수 있으며, 나머지 thread는 대기 상태
+- semaphore를 얻은 thread 만이 critical setion에 들어갈 수 있음
+
+### 은행 예제
+- 공유 자원에 대해서 접근 권한을 제한하기 위해 synchronized 방식이 제공
+- 블록형식으로도 사용 가능
+- 동기화 (synchronized)는 임계영역에 접근한 경우 공유 자원을 lock하여 다른 thread의 접근을 제어
+- 동기화를 잘못 구현하면 deadlock에 빠질 수 있음
+
+```JAVA
+package ch19;
+
+
+class Bank{
+	
+	private int money = 10000;
+	
+	public synchronized void saveMoney(int save) {
+		int m = getMoney();
+		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		setMoney(save+m);
+	}
+	public synchronized void minusMoney(int minus) {
+		int m = getMoney();
+		try {
+			Thread.sleep(200);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		setMoney(m-minus);
+	}
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+}
+
+class Park extends Thread{
+	public void run() {
+		System.out.println("start save");
+		SyncMain.bk.saveMoney(3000);
+		System.out.println("saveMoney(3000) : "+SyncMain.bk.getMoney());
+	}
+}
+class ParkWife extends Thread{
+	public void run() {
+		System.out.println("start minus");
+		SyncMain.bk.minusMoney(2000);
+		System.out.println("minusMoney(2000) : "+SyncMain.bk.getMoney());
+	}
+}
+public class SyncMain {
+	public static Bank bk = new Bank();
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		Park p = new Park();
+		p.start();
+		
+		Thread.sleep(200);
+		ParkWife pwife = new ParkWife();
+		pwife.start();
+	}
+
+}
+```
+
+### synchronized 블럭
+- 현재 객체 또는 다른 객체를 lock으로 만듬
+```JAVA
+synchronized (참조형 수식){
+	수행문 ;
+}
+```
+
+### wait() / notify() 메서드를 활용한 동기화 프로그래밍
+- 자원이 어떤 조건에서 더 이상 유효하지 않은 경우 자원을 기다리기 위해 Thread가 wait() 상태가 됨
+- wait() 상태가 된 Thread는 notify()가 호출 될 때까지 기다림
+- 유효한 자원이 생기면 notify()가 호출되고, wait() 상태인 Thread 중 무작위로 하나의 Thread를 재시작
+- notifyAll()이 호출되는 경우 wait()하고 있는 모든 Thread가 재시작
+- 이 경우 유효한 자원만큼의 Thread만이 수행될 수 있고, 자원을 갖지 못한 Thread의 경우는 다시 wait()
+- 자바에서는 notifyAll() 메서드의 사용을 권장
+
+ </div>
+ </details>
