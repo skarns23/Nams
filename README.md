@@ -243,3 +243,134 @@ try{
  </div>
  </details>
 	  
+<details>
+ <summary> 2022.3.29(TUE)</summary>
+ <div markdown ="1">	 
+
+## [데코레이터 패턴을 활용한 커피 머신 프로그램](https://github.com/skarns23/Nams/tree/master/learn_java/Chapter14/src/ch16)
+
+### Decorator Pattern
+- 객체의 결합을 통해 기능을 동적으로 유연하게 확장 가능
+- 자바의 입출력 스트림은 decorator pattern 임
+- 여러 decorator들을 활용하여 다양한 기능을 제공
+- 상속 보다 유연한 구현 방식
+- 데코레이터는 다른 데코레이터 혹은 컴포넌트를 포함해야 함
+- 지속적인 기능의 추가와 제거가 용이함
+- 데코레이터와 컴포넌트는 동일하지 않음
+
+## 자바에서 Thread 만들기
+
+### Thread란
+- 프로세스가 단순히 실행 중인 프로그램이라면 thread는 프로세스내에서 실제로 작업을 수행하는 주체를 의미
+- 모든 프로세스에는 한 개 이상의 thread가 존재하여 작업을 수행
+- 실제 작업을 수행하는 단위는 thread 임
+- 공유 자원에 대해 동기화 기법이 필요함
+
+### multi-threading
+- 여러 thread가 동시에 수행되는 프로그래밍. 여러 작업이 동시에 실행
+- thread는 각각 자신만의 작업 공간을 가짐 ( context )
+- 각 thread 사이에서 공유하는 자원이 있을 수 있음 ( 자바에서는 static interface )
+- 자원을 공유하여 여러 thread가 작업을 수행하는 경우 서로 자원을 차지하려는 race condition이 발생할 수 있음
+- 해결을 위해 critical section에 대한 동기화를 구현해야 함
+
+
+### Thread 구현
+- Thread 구현은 Thread 클래스를 상속받아서 구현하는 방법
+- Runnable 인터페이스를 상속하여 구현하는 방법
+- Thread 클래스를 상속하는 경우 기존에 상속받은 클래스가 없는 경우에 구현 가능
+- Runnable 인터페이스는 상속받은 클래스가 있더라도 인터페이스이기때문에 구현가능
+
+### Thread Status
+- Runnable: 스레드가 시작되면 스레드 풀에 들어감. CPU 배분을 기다리는 상태 
+- Run : 스레드가 CPU를 배분받아 실행되는 상태
+- Dead : 스레드가 수행되서 종료된 상태
+- Not Runnable : CPU를 점유할 수 없는 상태 3가지의 메소드 호출을 통해서 가능
+1) sleep() (ms가 들어감) : 잠시 쉬었다가 실행
+2) wait() : 자원을 사용할 수 있는 상태까지 대기 notify(), notifyAll()메소드를 통해 자원 사용가능 여부를 회신
+3) join() : 다른 스레드의 실행결과를 참조해야하는 경우 join()을 실행한 스레드가 Not Runnable에 빠지고 다른 스레드가 종료되면 다시 실행
+
+### Thread 우선순위
+- Thread.MIN_PRIORITY( 1 ) ~ Thread.MAX_PRIORITY( 10 )
+- 디폴트 우선 순위 : Thread.NORMAL_PRIORITY ( 5 )
+- 우선 순위가 높을 수록 CPU 배분을 받을 확률이 높다
+- setPriority(), getPriority() 메소드 제공
+
+### join()
+- 동시에 두 개 이상의 Thread가 실행 될 때 다른 Thread의 결과를 참조 하여 실행해야 하는 경우 join()함수를 사용
+- join() 함수를 호출한 Thread가 not-runnable 상태로 감
+- 다른 Thread의 실행이 끝나면 runnable 상태로 돌아옴
+
+### interrupt()
+- 다른 Thread에 예외를 발생시키는 interrupt를 보냄
+- Thread가 join(), sleep(), wait() 메서드에의해 not-runnable 상태일 때 interrupt() 메서드를 호출하면 다시 runnable 상태가 될 수 있음 
+
+### Thread 종료
+- 무한 반복의 경우 while(flag)의 flag 변수 값을 false로 바뀌어 종료를 시킴
+- Thread 종료하기 예제
+
+``` JAVA
+package ch18;
+
+import java.io.IOException;
+
+public class TerminateThread extends Thread{
+	
+	
+	private boolean flag = false;
+	int i;
+	
+	public TerminateThread(String nm) {
+		super(nm);
+	}
+	
+	public void run() {
+		while(!flag) {
+			try {
+				System.out.print(this.getName()+" ");
+				sleep(100);
+			}catch (Exception e) {
+				
+			}
+		}
+		System.out.println(getName() +" end");
+	}
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		TerminateThread A = new TerminateThread("A");
+		TerminateThread B = new TerminateThread("B");
+		TerminateThread C = new TerminateThread("C");
+		
+		A.start();
+		B.start();
+		C.start();
+		int in;
+		while(true) {
+			in = System.in.read();
+			switch (in) {
+			case 'A':
+				A.setFlag(true);
+				break;
+			case 'B':
+				B.setFlag(true);
+				break;
+			case 'C':
+				C.setFlag(true);
+				break;
+			case 'M':
+				A.setFlag(true);
+				B.setFlag(true);
+				C.setFlag(true);
+				break;
+			}
+		}
+	}
+
+}
+```
+
+ </div>
+ </details>
+	  
