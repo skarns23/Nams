@@ -6,6 +6,7 @@ public class Baekjoon18870 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
 		int size = Integer.parseInt(br.readLine());
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int[] arr =new int [size];
@@ -13,13 +14,14 @@ public class Baekjoon18870 {
 			arr[i] = Integer.parseInt(st.nextToken());
 			
 		}
+		
+		
 		int[] tmp= arr.clone();
 		Arrays.sort(tmp);
 		HashMap<Integer,Integer> map = new LinkedHashMap<Integer, Integer>();
 		int count = 0;
-		
 		for(int i =0; i<size;i++) {
-			if(!map.containsKey(tmp[i])) {
+			if(!map.containsKey(tmp[i])) { 
 				map.put(tmp[i], count);
 				count++;
 			}

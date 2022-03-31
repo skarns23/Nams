@@ -34,6 +34,9 @@ public class Baekjoon2108 {
 		}
 		Arrays.sort(arr);
 		double avg = (double)sum / size;
+		
+		
+		
 		int mode_max = 0;
 		int mode = 10000;
 		boolean flag = false;
@@ -51,6 +54,9 @@ public class Baekjoon2108 {
 				}
 			}
 		}
+		
+		
+		
 		bw.write(Math.round(avg)+"\n");
 		bw.write(arr[(size-1)/2]+"\n");
 		bw.write(mode+"\n");
