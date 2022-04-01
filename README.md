@@ -477,3 +477,43 @@ synchronized (참조형 수식){
 
  </div>
  </details>
+<details>
+<summary> 2022.3.31(THU) </summary>
+<div markdown = "1">
+
+## [학생 성적 산출 프로젝트 만들기](https://github.com/skarns23/Nams/tree/master/learn_java/Chapter15/src)
+
+</div>
+</details>
+
+
+<details>
+<summary> 2022.4.1(FRI) </summary>
+<div markdown = "1">
+
+## [백준 백트래킹 문제 해결](https://www.acmicpc.net/step/34)
+
+### [[백준/자바JAVA]9663번 N-Queen](https://www.acmicpc.net/problem/9663)
+ - [CODE](https://github.com/skarns23/Nams/blob/master/Baek/BaekJoon/src/baekjoon/step13/Baekjoon9663.java)
+- 백트래킹의 대표적인 문제
+- N*N 크기의 체스판에 N개의 퀸이 서로 공격하지 못하게 놓는 경우의 수를 구하는 문제
+- 풀이 방법을 안다면 생각보다 쉬운 문제 해결 힌트로는
+- 1개의 배열을 사용 index는 열로, 안에 값은 행으로 활용
+- 대각선을 피해 놓는 방법은 좌표 값 연산으로 해결가능
+- 같은 행에 대한 존재 확인
+
+### [[백준/자바JAVA]14888번 연산자 끼워넣기](https://www.acmicpc.net/problem/14888) / [CODE](https://github.com/skarns23/Nams/blob/master/Baek/BaekJoon/src/baekjoon/step13/Baekjoon14888.java)
+- 주어지는 수열과 연산자의 갯수를 통해 수식을 만들고 최솟값, 최대값을 구하는 문제
+- 연산자에 대해 dfs를 진행하는 방식의 풀이법
+- depth의 경우 숫자의 갯수와 같아지면 최솟값과 최대값에 연산 실행
+- 주어진 수열의 값과 연산을 통해 매개변수로 넘기는 형식
+
+### [[백준/자바JAVA]14889번 스타트와 링크](https://www.acmicpc.net/problem/14889) / [CODE](https://github.com/skarns23/Nams/blob/master/Baek/BaekJoon/src/baekjoon/step13/Baekjoon14889.java)
+- N명의 사람이 주어지면 각 팀을 N/2로 나누고, 각 팀의 화합 능력치 차이가 최소가 되는 경우의 값을 구하는 문제
+- 기존의 dfs 형식과 비슷하게 구성함
+- A팀에서 N/2명의 사람을 다 뽑은 경우, 남은 인원들을 B팀에 배정
+- 그 후 A, B팀에 대한 능력치 계산후 최솟값을 비교 및 갱신하는 형태로 구성 
+
+
+</div>
+</details>
