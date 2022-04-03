@@ -9,20 +9,23 @@ public class Baekjoon11866 {
 		int space = sc.nextInt();
 		Queue<Integer> que = new LinkedList<>();
 		System.out.print("<");
-		int index = space-1;
-		for(int i = 1 ;i<=size;i++) {
-			que.add(i);
+		int count = 0;
+		for(int i = 1 ; i<=size;i++) {
+			que.offer(i);
 		}
-		System.out.print(que.remove(space-1)+", ");
-		
-		while(!que.isEmpty()) {
-			index +=space-1;
-			index %=que.size();
-			if(que.size()>1) 
-				System.out.println(que.remove(index)+", ");
-			else
-				System.out.println(que.remove(index)+">");
-		
+		while(true) {
+			count++;
+			int num = que.poll();
+			if(count%space == 0 &&que.size()>0) {
+				System.out.print(num+", ");
+				continue;
+			}
+			else if((count%space == 0 )&&(que.size()==0)){
+				System.out.println(num+">");
+				break;
+			}
+			count %=space;
+			que.add(num);
 		}
 		
 		
