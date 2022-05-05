@@ -20,6 +20,7 @@ public class Lotto {
 		}
 		int max_match = 7-(count+zero);
 		int min_match = 7-count;
+		max_match = max_match >6 ? 6 : max_match;
 		min_match = min_match >6 ? 6 :min_match;
 		int[] result = new int [] {max_match,min_match};
 		return result;
