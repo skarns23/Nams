@@ -3,52 +3,56 @@ import java.util.*;
 public class MatrixTurn {
 	
 	
-	public static int[] solution(int rows,int columns, int[][]queries) {
+	public static int[] solution(int rows,int cols, int[][]queries) {
 		int[] answer = new int [queries.length];
-		int[][] arr = new int [rows][columns];
-		int[][] arr2;
+		Queue <Integer> que = new LinkedList<>();
 		int value = 1;
-		int x1,y1,x2,y2;
-		for(int i =0;i <rows;i++)
-			for(int j = 0;j <columns;j++) {
+		int[][] arr = new int[rows][cols];
+		for(int i = 0 ;i <rows;i++) {
+			for(int j = 0; j<cols;j++) {
 				arr[i][j] = value;
 				value++;
 			}
-		for(int i = 0 ; i<queries.length;i++) {
-			x1 = queries[i][0]-1;
-			y1 = queries[i][1]-1;			
-			x2 = queries[i][2]-1;
-			y2 = queries[i][3]-1;
-			arr2 = arr.clone();
-			int x = x1, y = y1+1;
-			arr[x][y] = arr2[x][y-1];
-			int min_value = Integer.MAX_VALUE;
-			while(true) {
-				if(x==x1 &&y==y1)
-					break;
-				if(min_value>arr2[x][y])
-					min_value = arr2[x][y];
-				if(x==x1 && y<y2) {
-					y++;
-					arr[x][y] = arr2[x][y-1];
-				}
-				else if(y==y2 &&x<x2) {
-					x++;
-					arr[x][y]=arr2[x-1][y];
-				}
-				else if(x==x2 &&y>y1) {
-					y--;
-					arr[x][y] = arr2[x][y+1];
-				}
-				else if(y==y1 &&x<x1) {
-					x--;
-					arr[x][y] =arr[x+1][y];
-				}
-				
+		}
+		for(int i =0; i<queries.length;i++) {
+			int x1 = queries[i][0]-1;
+			int y1 = queries[i][1]-1;
+			int x2 = queries[i][2]-1;
+			int y2 = queries[i][3]-1;
+			int x, y;
+			int min = Integer.MAX_VALUE;
+			int[][] arr2 = arr.clone();
+			x = x1; y = y1+1;
+			que.add(arr[x1][y1]);
+			while(!(x ==x1 &&y == y1)){
+			que.add(arr[x][y]);
+			if(x==x1 &&y<y2)
+				y++;
+			else if(y==y2 &&x<x2)
+				x++;
+			else if(x==x2&&y>y1)
+				y--;
+			else if(y==y1 &&x>x1)
+				x--;
+			
+			
 			}
-			answer[i] = min_value;
-			
-			
+			y++;
+			while(!que.isEmpty()) {
+				int v = que.poll();
+				if(v <min)
+					min = v;
+				arr[x][y] = v;
+				if(x==x1 &&y<y2)
+					y++;
+				else if(y==y2 &&x<x2)
+					x++;
+				else if(x==x2&&y>y1)
+					y--;
+				else if(y==y1 &&x>x1)
+					x--;
+			}
+			answer[i] = min;
 		}
 		return answer;
 	}
