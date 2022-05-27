@@ -1,27 +1,19 @@
-//Ω≈∞Ì∞·∞˙πﬁ±‚ πÆ¡¶
-package kakaoblind2022;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
-public class Lv1 {
-	public static  int[] solution(String[] id_list, String[] report, int k) {
-		int[] answer = new int [id_list.length];
+import java.util.*;
+class Solution {
+    public int[] solution(String[] id_list, String[] report, int k) {
+      int[] answer = new int [id_list.length];
 		HashMap<String,HashSet<String>> map = new HashMap<>();
-		//report ∞·∞˙∏¶ ¥„¿ª map
+		//report Í≤∞Í≥ºÎ•º Îã¥ÏùÑ map
 		HashMap<String,Integer> report_count = new HashMap<String, Integer>();
 		for(String s :id_list) {
-			map.put(s, new HashSet<>()); //id_listøÕ √ ±‚º≥¡§
-			report_count.put(s, 0); //∏ﬁ¿œ ºˆ∏¶ πﬁ¿ª report_count map¿ª √ ±‚»≠ 
+			map.put(s, new HashSet<>()); //id_listÏôÄ Ï¥àÍ∏∞ÏÑ§Ï†ï
+			report_count.put(s, 0); //Î©îÏùº ÏàòÎ•º Î∞õÏùÑ report_count mapÏùÑ Ï¥àÍ∏∞Ìôî
 		}
 		for(String s : report) {
 			String[] str = s.split(" ");
-			map.get(str[1]).add(str[0]); // ««Ω≈∞Ì¿⁄∏¶ key∑Œ Ω≈∞Ì¿⁄∏¶ ¡ﬂ∫π¿ª «„øÎ«œ¡ˆæ ¥¬ HashSetø° ≥÷æÓ ¡‹ 
+			map.get(str[1]).add(str[0]); // ÌîºÏã†Í≥†ÏûêÎ•º keyÎ°ú Ïã†Í≥†ÏûêÎ•º Ï§ëÎ≥µÏùÑ ÌóàÏö©ÌïòÏßÄÏïäÎäî HashSetÏóê ÎÑ£Ïñ¥ Ï§å
 		}
-		
+
 		for(String s : id_list) {
 			if(map.get(s).size()>=k) {
 				for(String name : map.get(s)) {
@@ -37,17 +29,5 @@ public class Lv1 {
 			i++;
 		}
 		return answer;
-	}
-	
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int k = 2;
-		String[] str = {"muzi", "frodo", "apeach", "neo"};
-		String[] report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
-		int[] result = solution(str,report,k);
-		for(int i :result)
-			System.out.println(i);
-	}
-
+    }
 }
