@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-
+// 신고 횟수를 판단하는 문제 기본의 HashSet구현 방법으로는 실패하고 Arrays.stream의 distinct를 활용하여 처리함
 public class Lv1_Report {
     class Solution {
         public int[] solution(String[] id_list, String[] report, int k) {
