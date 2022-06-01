@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7874199a-52e2-4890-a4a0-f44d64442c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Progerammers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev_matching_2021/Lv1_Lotto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev_matching_2021/Lv2_Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kakaoblind_2021/Lv1_newID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kakaoblind_2022/Lv1_Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kakaoblind_2021/Lv1_newID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kakaoblind_2021/Lv1_newID.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

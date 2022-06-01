@@ -1,5 +1,6 @@
 package kakaoblind_2021;
 
+// 카카오 새로운 아이디 제안하기 문제
 public class Lv1_newID {
     static class Solution {
         public String solution(String new_id) {
