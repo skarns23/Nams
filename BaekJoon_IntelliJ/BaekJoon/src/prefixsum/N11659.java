@@ -13,18 +13,17 @@ public class N11659 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
-        int[] arr = new int[N];
+        int[] arr = new int[N+1];
         st = new StringTokenizer(br.readLine());
-        for(int i = 0 ; i<N;i++)
-            arr[i] = Integer.parseInt(st.nextToken());
+        arr[0] = 0;
+        for(int i = 1 ; i<=N;i++)
+            arr[i] = arr[i-1]+Integer.parseInt(st.nextToken());
         for(int i = 0 ;i <M;i++){
             st  = new StringTokenizer(br.readLine());
             int start = Integer.parseInt(st.nextToken());
             int end  = Integer.parseInt(st.nextToken());
-            int sum = 0;
-            for(int j =start-1; j<end;j++)
-                sum +=arr[j];
-            bw.write(sum+"\n");
+            int prefix_sum = arr[end] - arr[start-1];
+            bw.write(prefix_sum+"\n");
         }
         bw.flush();
     }
