@@ -31,16 +31,22 @@ public class N11660 {
             int diff_x = x2-x1;
             int diff_y = y2-y1;
             int sum = 0;
-            if(diff_x == diff_y){
-                bw.write(sum_row[x1][y1]-sum_row[x1-1][y1]+"\n");
+            if(x1==x2 &&y1==y2){
+                bw.write(sum_row[x1][y1]-sum_row[x1][y1-1]+"\n");
                 continue;
-            } else if(diff_x>diff_y) {
+
+            } else if (diff_x==diff_y){
+                for(int j = 0 ; j<=diff_x;j++){
+                    sum +=sum_row[x1+j][y2] - sum_row[x1][y1-1];
+                }
+            }
+            else if(diff_x>diff_y) {
 
                 for(int j = 0 ; j<=diff_y;j++)
-                    sum += sum_col[x2][y1+j]-sum_col[x1-1][y1];
-            } else if(diff_y>=diff_x){
-                for(int j = 0 ; j<diff_x;j++)
-                    sum += sum_row[x1+j][y2]-sum_col[x1][y1-1];
+                    sum += sum_col[x2][y1+j]-sum_col[x1-1][y1+j];
+            } else if(diff_y>diff_x){
+                for(int j = 0 ; j<=diff_x;j++)
+                    sum += sum_row[x1+j][y2]-sum_row[x1+j][y1-1];
             }
             bw.write(sum+"\n");
         }
