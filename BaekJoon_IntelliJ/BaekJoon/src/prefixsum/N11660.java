@@ -8,18 +8,15 @@ public class N11660 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringTokenizer st;
+        st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
-        int[][] sum_row = new int[N+1][N+1];
-        int[][] sum_col = new int[N+1][N+1];
-        int[][] arr = new int [N+1][N+1];
-        for(int i = 1 ; i<=N;i++) {
+        int[][] dp = new int [N+1][N+1];
+        for(int i = 1; i<=N;i++){
             st = new StringTokenizer(br.readLine());
-            for(int j = 1 ; j<=N;j++){
-                int val  = Integer.parseInt(st.nextToken());
-                sum_row[i][j] = sum_row[i][j-1]+val;
-                sum_col[i][j] = sum_col[i-1][j]+val;
+            for(int j = 1; j<=N;j++){
+                dp[i][j] = dp[i][j-1] +Integer.parseInt(st.nextToken());
             }
         }
         for(int i = 0; i<M;i++){
@@ -28,28 +25,18 @@ public class N11660 {
             int y1 = Integer.parseInt(st.nextToken());
             int x2 = Integer.parseInt(st.nextToken());
             int y2 = Integer.parseInt(st.nextToken());
-            int diff_x = x2-x1;
-            int diff_y = y2-y1;
             int sum = 0;
             if(x1==x2 &&y1==y2){
-                bw.write(sum_row[x1][y1]-sum_row[x1][y1-1]+"\n");
+                bw.write(dp[x1][y1]-dp[x1][y1-1]+"\n");
                 continue;
-
-            } else if (diff_x==diff_y){
-                for(int j = 0 ; j<=diff_x;j++){
-                    sum +=sum_row[x1+j][y2] - sum_row[x1][y1-1];
-                }
             }
-            else if(diff_x>diff_y) {
-
-                for(int j = 0 ; j<=diff_y;j++)
-                    sum += sum_col[x2][y1+j]-sum_col[x1-1][y1+j];
-            } else if(diff_y>diff_x){
-                for(int j = 0 ; j<=diff_x;j++)
-                    sum += sum_row[x1+j][y2]-sum_row[x1+j][y1-1];
+            for(int row = x1; row<=x2;row++){
+                sum += dp[row][y2] - dp[row][y1-1];
             }
             bw.write(sum+"\n");
+
         }
         bw.flush();
+
     }
 }
