@@ -1,6 +1,10 @@
 package hash;
 import java.util.*;
 public class Pocketmon {
+    class Temp{
+        public int a;
+        public int b;
+    }
     class Solution {
         public int solution(int[] nums) {
             int answer = 0;
