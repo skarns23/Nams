@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.HashSet;
 
-//단어 수학 https://www.acmicpc.net/problem/1339
+//단어 수학 https://www.acmicpc.net/problem/1339 완전탐색 풀이 -> 시간초과
 public class N1339 {
     static HashSet<Character> set = new HashSet<>();
     static HashMap<Character,String> map = new HashMap<>();

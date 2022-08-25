@@ -7,6 +7,7 @@
     <list default="true" id="cdbc349a-24e2-4c2f-8b69-abaf8e7010a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaekJoon/src/bruteforce/N1339.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/src/bruteforce/N1339.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Programmers/Progerammers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Programmers/Progerammers/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N1339">
+  <component name="RunManager" selected="Application.N9461">
     <configuration name="N1339" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bruteforce.N1339" />
       <module name="BaekJoon_IntelliJ" />
@@ -60,21 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="N2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.N2" />
-      <module name="BaekJoon_IntelliJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="N2529" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bruteforce.N2529" />
+    <configuration name="N1339GREED" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bruteforce.N1339GREED" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
@@ -86,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="N4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.N4" />
+    <configuration name="N1904" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.N1904" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +87,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="N5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.N5" />
+    <configuration name="N24416" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.N24416" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="N9461" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.N9461" />
+      <module name="BaekJoon_IntelliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N9461" />
+        <item itemvalue="Application.N1904" />
+        <item itemvalue="Application.N24416" />
+        <item itemvalue="Application.N1339GREED" />
         <item itemvalue="Application.N1339" />
-        <item itemvalue="Application.N2529" />
-        <item itemvalue="Application.N4" />
-        <item itemvalue="Application.N2" />
-        <item itemvalue="Application.N5" />
       </list>
     </recent_temporary>
   </component>
