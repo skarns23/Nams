@@ -16,6 +16,7 @@ public class N24416 {
         }
     }
     public static int fibo2(int n){
+        String str;
 
         for(int i =3;i <n;i++){
             arr[i] = arr[i-1]+arr[i-2];
@@ -43,3 +44,5 @@ public class N24416 {
 
 
 }
+
+

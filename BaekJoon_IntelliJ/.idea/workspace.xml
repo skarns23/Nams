@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdbc349a-24e2-4c2f-8b69-abaf8e7010a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaekJoon/src/dp/N1912.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/src/dp/N1912.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaekJoon/src/sort/N24416.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/src/sort/N24416.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +47,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N1912">
-    <configuration name="N1339GREED" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bruteforce.N1339GREED" />
+  <component name="RunManager" selected="Application.N1149">
+    <configuration name="N1149" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.N1149" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bruteforce.*" />
+          <option name="PATTERN" value="dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N1149" />
         <item itemvalue="Application.N1912" />
         <item itemvalue="Application.N9461" />
         <item itemvalue="Application.N1904" />
         <item itemvalue="Application.N24416" />
-        <item itemvalue="Application.N1339GREED" />
       </list>
     </recent_temporary>
   </component>
