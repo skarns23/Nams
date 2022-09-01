@@ -3,6 +3,8 @@ package dp;
 import java.io.*;
 import java.util.StringTokenizer;
 
+// https://www.acmicpc.net/problem/1149
+// RGB거리 구하기 문제
 public class N1149 {
 
     public static void main(String[] args) throws IOException {
@@ -49,3 +51,4 @@ public class N1149 {
 
     }
 }
+
