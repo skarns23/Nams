@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdbc349a-24e2-4c2f-8b69-abaf8e7010a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/dp/N1149.class" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/dp/N1149.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaekJoon/src/dp/N1149.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/src/dp/N1149.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N1932">
+  <component name="RunManager" selected="Application.N2579">
     <configuration name="N1149" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dp.N1149" />
       <module name="BaekJoon_IntelliJ" />
@@ -87,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="N9461" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.N9461" />
+    <configuration name="N2579" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.N2579" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
@@ -115,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N2579" />
         <item itemvalue="Application.N1932" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.N1149" />
         <item itemvalue="Application.N1912" />
-        <item itemvalue="Application.N9461" />
       </list>
     </recent_temporary>
   </component>
