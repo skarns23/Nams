@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdbc349a-24e2-4c2f-8b69-abaf8e7010a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/dp/N2156.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaekJoon/src/dp/N2156.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/Main$Inner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/dp/N2156.class" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/dp/N2156.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N2156">
+  <component name="RunManager" selected="Application.N11053">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="BaekJoon_IntelliJ" />
@@ -59,6 +56,19 @@
     </configuration>
     <configuration name="N10844" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dp.N10844" />
+      <module name="BaekJoon_IntelliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="N11053" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.N11053" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
@@ -96,26 +106,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="N2579" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.N2579" />
-      <module name="BaekJoon_IntelliJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N11053" />
         <item itemvalue="Application.N2156" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.N10844" />
         <item itemvalue="Application.N1463" />
-        <item itemvalue="Application.N2579" />
       </list>
     </recent_temporary>
   </component>
