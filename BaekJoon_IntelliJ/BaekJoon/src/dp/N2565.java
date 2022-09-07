@@ -42,7 +42,10 @@ public class N2565 {
                     dp[i] = Math.max(dp[i],dp[j]+1);
                 }
             }
-            System.out.println(i+" "+dp[i]);
+
         }
+        Arrays.sort(dp);
+        bw.write((N-dp[N-1])+"");
+        bw.flush();
     }
 }
