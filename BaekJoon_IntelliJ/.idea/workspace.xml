@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdbc349a-24e2-4c2f-8b69-abaf8e7010a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/dp/N11054.class" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/production/BaekJoon_IntelliJ/dp/N11054.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,27 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N2565">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="BaekJoon_IntelliJ" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="N11053" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.N11053" />
-      <module name="BaekJoon_IntelliJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.N12865">
     <configuration name="N11054" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dp.N11054" />
       <module name="BaekJoon_IntelliJ" />
@@ -80,12 +59,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="N2156" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.N2156" />
+    <configuration name="N12865" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.N12865" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="N25305" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.N25305" />
+      <module name="BaekJoon_IntelliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,13 +98,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="N9251" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.N9251" />
+      <module name="BaekJoon_IntelliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N12865" />
+        <item itemvalue="Application.N25305" />
+        <item itemvalue="Application.N9251" />
         <item itemvalue="Application.N2565" />
         <item itemvalue="Application.N11054" />
-        <item itemvalue="Application.N11053" />
-        <item itemvalue="Application.N2156" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +165,11 @@
           <url>file://$PROJECT_DIR$/BaekJoon/src/dp/N11054.java</url>
           <line>50</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BaekJoon/src/dp/N12865.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
