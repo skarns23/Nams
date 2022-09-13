@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdbc349a-24e2-4c2f-8b69-abaf8e7010a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaekJoon/src/dp/N12865.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/src/dp/N12865.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +45,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N12865">
-    <configuration name="N11054" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.N11054" />
+  <component name="RunManager" selected="Application.N11726">
+    <configuration name="N11726" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.N11726" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N11726" />
         <item itemvalue="Application.N12865" />
         <item itemvalue="Application.N25305" />
         <item itemvalue="Application.N9251" />
         <item itemvalue="Application.N2565" />
-        <item itemvalue="Application.N11054" />
       </list>
     </recent_temporary>
   </component>
