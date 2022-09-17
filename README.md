@@ -39,7 +39,7 @@
 
 </div>
 </details>
- 
+
 <details>
 
 <summary> 2022.2.14(MON)</summary>
@@ -508,7 +508,7 @@ synchronized (참조형 수식){
 - depth의 경우 숫자의 갯수와 같아지면 최솟값과 최대값에 연산 실행
 - 주어진 수열의 값과 연산을 통해 매개변수로 넘기는 형식
 
-### [[백준/자바JAVA]14889번 스타트와 링크](https://www.acmicpc.net/problem/14889) / [CODE](https://github.com/skarns23/Nams/blob/master/Baek/BaekJoon/src/baekjoon/step13/Baekjoon14889.java)
+### [[백준/자바JAVA]14889번 스타트와 링크] (https://www.acmicpc.net/problem/14889) / [CODE](https://github.com/skarns23/Nams/blob/master/Baek/BaekJoon/src/baekjoon/step13/Baekjoon14889.java)
 - N명의 사람이 주어지면 각 팀을 N/2로 나누고, 각 팀의 화합 능력치 차이가 최소가 되는 경우의 값을 구하는 문제
 - 기존의 dfs 형식과 비슷하게 구성함
 - A팀에서 N/2명의 사람을 다 뽑은 경우, 남은 인원들을 B팀에 배정
