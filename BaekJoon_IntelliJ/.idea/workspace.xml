@@ -45,26 +45,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N11286">
+  <component name="RunManager" selected="Application.N17298">
     <configuration name="N11286" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="queue.N11286" />
       <module name="BaekJoon_IntelliJ" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="N1309" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.N1309" />
-      <module name="BaekJoon_IntelliJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="N17298" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stack.N17298" />
+      <module name="BaekJoon_IntelliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="N1874" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.N1874" />
       <module name="BaekJoon_IntelliJ" />
@@ -113,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N17298" />
         <item itemvalue="Application.N11286" />
         <item itemvalue="Application.N1874" />
         <item itemvalue="Application.N1669" />
         <item itemvalue="Application.N14501" />
-        <item itemvalue="Application.N1309" />
       </list>
     </recent_temporary>
   </component>
