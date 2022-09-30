@@ -1,6 +1,7 @@
 # 📌[2022]
 
-
+## [오큰수](https://github.com/skarns23/Nams/blob/master/BaekJoon_IntelliJ/BaekJoon/src/stack/N17298.java)
+## [절댓값 힙](https://github.com/skarns23/Nams/blob/master/BaekJoon_IntelliJ/BaekJoon/src/queue/N11286.java)
 <details>
 <summary> 2022.2.13(SUN)</summary>
 <div markdown="1">
