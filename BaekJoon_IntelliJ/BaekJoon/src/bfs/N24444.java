@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class N24444 {
+<<<<<<< HEAD
     static List<List<Integer>> list = new ArrayList<>();
     static int[] result;
     public static void main(String[] args) throws IOException {
@@ -53,6 +54,22 @@ public class N24444 {
                     result[next] = count++;
                 }
             }
+=======
+    static ArrayList<Integer>[] list;
+    static Queue<Integer>  que = new LinkedList<>();
+    static int[] result;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
+        int key = Integer.parseInt(st.nextToken());
+        list = new ArrayList[N];
+        for(int i = 0; i <M;i++){
+            st = new StringTokenizer(br.readLine());
+
+>>>>>>> b08c625 (백준 문제 해결)
         }
     }
 
