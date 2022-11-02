@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.*;
 
 public class N24444 {
-<<<<<<< HEAD
     static List<List<Integer>> list = new ArrayList<>();
     static int[] result;
+
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -16,12 +16,12 @@ public class N24444 {
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
         int R = Integer.parseInt(st.nextToken());
-        result = new int[N+1];
+        result = new int[N + 1];
         result[R] = 1;
-        for(int i =0;i<=N;i++){
+        for (int i = 0; i <= N; i++) {
             list.add(new ArrayList<>());
         }
-        for(int i = 0 ;i<M;i++){
+        for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
             int pre = Integer.parseInt(st.nextToken());
             int next = Integer.parseInt(st.nextToken());
@@ -30,47 +30,31 @@ public class N24444 {
             list.get(next).add(pre);
         }
 
-        for(int i=1;i<=N;i++){
+        for (int i = 1; i <= N; i++) {
             Collections.sort(list.get(i));
         }
         bfs(R);
-        for(int i = 1; i< result.length;i++){
-            bw.write(result[i]+"\n");
+        for (int i = 1; i < result.length; i++) {
+            bw.write(result[i] + "\n");
         }
         bw.flush();
     }
 
-    public static void bfs(int start){
+    public static void bfs(int start) {
         Queue<Integer> que = new LinkedList<>();
         que.add(start);
         int count = 1;
         result[start] = count++;
-        while(!que.isEmpty()){
+        while (!que.isEmpty()) {
             int go = que.poll();
-            for(int i=0;i<list.get(go).size();i++){
+            for (int i = 0; i < list.get(go).size(); i++) {
                 int next = list.get(go).get(i);
-                if(result[next]==0){
+                if (result[next] == 0) {
                     que.add(next);
                     result[next] = count++;
                 }
             }
-=======
-    static ArrayList<Integer>[] list;
-    static Queue<Integer>  que = new LinkedList<>();
-    static int[] result;
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int N = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
-        int key = Integer.parseInt(st.nextToken());
-        list = new ArrayList[N];
-        for(int i = 0; i <M;i++){
-            st = new StringTokenizer(br.readLine());
 
->>>>>>> b08c625 (백준 문제 해결)
         }
     }
-
 }
