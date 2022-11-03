@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdbc349a-24e2-4c2f-8b69-abaf8e7010a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaekJoon/src/bfs/N24444.java" beforeDir="false" afterPath="$PROJECT_DIR$/BaekJoon/src/bfs/N24444.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N15764">
+  <component name="RunManager" selected="Application.N1715">
     <configuration name="N15764" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="N15764" />
       <module name="BaekJoon_IntelliJ" />
@@ -57,6 +56,19 @@
     <configuration name="N15764" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="greedy.N15764" />
       <module name="BaekJoon_IntelliJ" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="N1715" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="greedy.N1715" />
+      <module name="BaekJoon_IntelliJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.N1715" />
         <item itemvalue="Application.N15764" />
         <item itemvalue="Application.N15764" />
         <item itemvalue="Application.N24444" />
         <item itemvalue="Application.N7576" />
-        <item itemvalue="Application.N17298" />
       </list>
     </recent_temporary>
   </component>
