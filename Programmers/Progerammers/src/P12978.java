@@ -57,14 +57,15 @@ public class P12978  {
                 // 이전에 방문한 마을인 경우 패스
                 if(visited[a.point])continue;
                 // 방문하지 않은 경우, 해당 마을 방문여부 true 로 변경 후 마을에 방문
-                visited[a.point] = true;
-                // 방문한 현재 마을에 대해 최소 값 비교
-                arr[a.point] = Math.min(a.value+count,arr[a.point]);
-                // 이후 해당 마을에 대해 변한 가중치와 함께 DFS 진행
-                dfs(a.point,a.value+count,K);
-                // DFS 종료 후, 해당 마을을 방문하지 않은 상태로 변경
-                visited[a.point] = false;
-
+                if(arr[a.point]>count+a.value){
+                    visited[a.point] = true;
+                    // 방문한 현재 마을에 대해 최소 값 비교
+                    arr[a.point] = Math.min(a.value+count,arr[a.point]);
+                    // 이후 해당 마을에 대해 변한 가중치와 함께 DFS 진행
+                    dfs(a.point,a.value+count,K);
+                    // DFS 종료 후, 해당 마을을 방문하지 않은 상태로 변경
+                    visited[a.point] = false;
+                }
             }
         }
 
@@ -79,5 +80,6 @@ public class P12978  {
                 this.value = value;
             }
         }
+
     }
 }
