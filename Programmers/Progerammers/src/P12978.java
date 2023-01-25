@@ -3,7 +3,7 @@ import java.util.*;
 // 배달
 // BFS/DFS 문제
 // 1번 집을 기준으로 DFS를 진행해서 각 노드면 최소 값을 구함
-public class P12978 {
+public class P12978  {
 
     static class Solution {
         // 특정 집을 기준으로 연결되는 여러 노드들을 저장해야하므로 Map 내부에 Value를 List로 선언
